@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.margem{
+    margin: 20px;
+   }
+
+   .card-group{
+    width: 1000px;
+    height: 350px;
+    justify-content: space-around;
+} 
+
+   .col{
+    height: 500px ;
+    width: 600px;
+    align-items: center;
+   }
+   

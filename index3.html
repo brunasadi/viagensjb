@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viagens JB</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/images-removebg-preview (1).png" type="image/x-icon" />
+  <!--Google Fonts-lato-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- CSS bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <!--  bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+
+  <!--JavaScript Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg fixed-top bg-secondary-color" id="navbar">
+    <div class="container py-3">
+      <a href="#" class="navbar-brand primary-color">
+        <img src="img/images-removebg-preview (1).png" alt="Turismo JMIVI">
+        <span>Viagens JB</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+        aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-icon"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-items">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#hoteis" class="nav-link primary-color ">Hoteis</a>
+          </li>
+          <li class="nav-item">
+            <a href="#passagens" class="nav-link primary-color ">Passagens</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link primary-color">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- SLIDER -->
+  <div class="container" id="slider-container">
+    <div class="carousel slide" id="slider" data-bs-ride="carouse">
+      <div class="carousel-indicators">
+        <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true"
+          aria-label="slide 1"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="slide 2"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="slide 3"></button>
+        <!--carrossel-->
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/rjj.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Rio De Janeiro</h5>
+              <a href="#" class="btn btn-dark">Ver Pacotes</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/duna.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lençois Maranhenses</h5>
+              <a href="#" class="btn btn-dark">Ver Pacotes</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2018/04/25/09/26/eiffel-tower-3349075_960_720.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>França, Paris</h5>
+              <a href="#" class="btn btn-dark">Ver Pacotes</a>
+
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--carrossel-->
+    <br><br><br>
+
+    <!--DESTAQUES-->
+    <div class="container" id="featured-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Lugares em destaque</h2>
+        <p class="subtitle secondary-color">Conheça as nossas melhores cidades turisticas
+        </p>
+      </div>
+      <div class="col-12" id="featured-images">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="img/campos.png" alt="Campos do Jordão" class="img-fluid">
+            <div class="banner-content">
+              <p class="secondary-color">Turismo</p>
+              <h3>Campos do Jordão</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/Amazonas.jpg" alt="Campos do Jordão" class="img-fluid">
+            <div class="banner-content">
+              <p class="secondary-color">Turismo</p>
+              <h3>Amazonas</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="file:///D:/Site_trabalho/imgs/img4.jpg" alt="Campos do Jordão" class="img-fluid">
+            <div class="banner-content">
+              <p class="secondary-color">Turismo</p>
+              <h3>Grécia</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="https://r4t2s9v3.stackpathcdn.com/wp-content/uploads/2021/07/cancun-cidade-mexicana.jpg"
+              alt="Campos do Jordão" class="img-fluid">
+            <div class="banner-content">
+              <p class="secondary-color">Turismo</p>
+              <h3>México, Cancun</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="https://vamospraonde.com/wp-content/uploads/2019/11/roteiro-inverno-na-sui%C3%A7a.jpg"
+              alt="Campos do Jordão" class="img-fluid">
+            <div class="banner-content">
+              <p class="secondary-color">Turismo</p>
+              <h3>Suiça</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="https://www.caracteristicas.co/wp-content/uploads/2018/09/italia-venecia-e1579918748781-800x416.jpg"
+              alt="Campos do Jordão" class="img-fluid">
+            <div class="banner-content">
+              <p class="secondary-color">Turismo</p>
+              <h3>Itália</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--cards hoteis-->
+    <div class="hoteis" id="hoteis">
+      <H1>Hoteis</H1>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/00/50/fd/hotel-colline-de-france.jpg?w=1200&h=-1&s=1"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hotel Colline de France</h5>
+              <p class="card-text">Esse é um dos melhores hoteis do mundo, está localizado em Gramado</p>
+              <a class="btn btn-primary" href="index4.html" role="button">Reservar</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://skemma.gr/wp-content/uploads/2020/01/03_IKOS_ARIA.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ikos Aria</h5>
+              <p class="card-text">Esse é um dos melhores hoteis do mundo, está localizado na Grécia</p>
+              <a class="btn btn-primary" href="index4.html" role="button">Reservar</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://s2.glbimg.com/40_gLWqvNbrGHgb31t4BFVed2ew=/0x0:1173x668/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/l/V/2JaHC7S9qWGKvu36kxqg/hotel-5-the-omnia.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> The Omnia</h5>
+              <p class="card-text">Esse é um dos melhores hoteis do mundo, está localizado na Suiça
+                content.</p>
+              <a class="btn btn-primary" href="index4.html" role="button">Reservar</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://primetour.com.br/wp-content/uploads/2016/04/maldivas-luxo-six-senses-laamu-primetour-4.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Six Senses Laamu</h5>
+              <p class="card-text">Esse é um dos melhores hoteis do mundo, está localizado nas Ilhas Maldivas</p>
+              <a class="btn btn-primary" href="index4.html" role="button">Reservar</a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+
+    <!--Passagens -->
+    <h1 id="passagens">Passagens</h1>
+    <!-- Example single danger button -->
+    <div class="passagens text-center">
+      <table class="table table-hover">
+
+        <thead>
+          <tr>
+            <th scope="col">Continentes</th>
+            <th scope="col">Preços</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"> América </th>
+            <td>R$ 3000,00</td>
+
+          </tr>
+          <tr>
+            <th scope="row">Europa</th>
+            <td>R$ 3200,00</td>
+
+          </tr>
+          <tr>
+            <th scope="row">África</th>
+            <td colspan="2">R$ 3500,00</td>
+
+          </tr>
+          <tr>
+            <th scope="row">Ásia</th>
+            <td colspan="2">R$ 3900,00</td>
+
+          </tr>
+          <tr>
+            <th scope="row">Oceania</th>
+            <td colspan="2">R$ 4000,00</td>
+
+          </tr>
+          <tr>
+            <th scope="row">Antártida</th>
+            <td colspan="2">R$ 1700,00</td>
+
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-grid gap-2 col-8 mx-auto">
+        <a href="index2.html"> <button type="button" class="btn btn-outline-success">
+            <h2>Comprar</h2>
+          </button> </a>
+      </div>
+
+      <br><br><br><br><br>
+    </div>
+    <!--Passagens-->
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+
+
+          <!-- FOOTER TOP -->
+          <div class="contato" id="contato">
+            <div class="col-12" id="footer-top">
+              <div class="row justify-content-between">
+                <div class="col-4">
+                  <h2 id="JB">
+                    JB
+                  </h2>
+                </div>
+
+              </div>
+            </div>
+            <!-- FOOTER DETAILS -->
+            <div class="col-12" id="footer-details">
+              <div class="row">
+                <div class="col-12 col-md-4" id="news-container">
+                  <h4>Fique por dentro das novidades</h4>
+
+                  <form>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" placeholder="Digite o seu e-mail" />
+                    </div>
+                    <button class="btn btn-dark">Inscrever</button>
+                  </form>
+                </div>
+                <div class="col-12 col-md-4" id="contact-container">
+                  <h4>Formas de contato</h4>
+                  <p class="secondary-color">(48)9999-9999</p>
+                  <p class="secondary-color">contato@jb.com</p>
+                </div>
+                <div class="col-12 col-md-2" id="links-container">
+                  <div class="row">
+                    <h4>Você pode estar buscando por:</h4>
+                    <div class="col-6">
+                      <ul class="list-unstyled">
+                        <li><a
+                            href="https://g1.globo.com/turismo-e-viagem/noticia/2022/05/13/veja-quais-sao-os-10-melhores-hoteis-do-mundo-eleitos-por-turistas.ghtml"
+                            class="secondary-color">melhores hoteis do mundo</a></li>
+
+                      </ul>
+                    </div>
+                    <div class="col-12 col-md-4" id="links-container">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br><br>
+            <!-- FOOTER BOTTOM -->
+            <div class="col-12" id="footer-bottom">
+              <div class="row justify-content-between">
+                <div class="col-12 col-md-3">
+                  <p class="secondary-color">JB &copy; 2022</p>
+                </div>
+
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!--contato-->
+
+
+
+
+
+
+
+
+  </div>
+  <!--cointainer-->
+
+</body>
+
+</html>
